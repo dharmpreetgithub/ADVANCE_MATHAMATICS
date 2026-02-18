@@ -30,19 +30,17 @@ The objective of this project is to:
 
 Each NO₂ value `x` is transformed using the formula:
 
-\[
+
 z = x + a_r \sin(b_r x)
-\]
+
 
 Where:
 
-\[
 a_r = 0.05 (r \bmod 7)
-\]
 
-\[
+
 b_r = 0.3 (r \bmod 5 + 1)
-\]
+
 
 - `r` = University Roll Number  
 - `mod` = Remainder operator  
@@ -55,31 +53,10 @@ The transformed dataset is denoted as `z`.
 
 The transformed data `z` is modeled using:
 
-\[
-\hat{p}(z) = c \cdot e^{-\lambda (z - \mu)^2}
-\]
+p̂(z) = c * exp( -λ (z − μ)² )
 
 This represents the exponential form of a Gaussian distribution.
 
-###  Relation to Standard Gaussian
-
-Standard Gaussian form:
-
-\[
-p(z) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(z-\mu)^2}{2\sigma^2}}
-\]
-
-By comparison:
-
-\[
-\lambda = \frac{1}{2\sigma^2}
-\]
-
-\[
-c = \frac{1}{\sqrt{2\pi\sigma^2}}
-\]
-
----
 
 ##  Parameter Estimation (Maximum Likelihood Estimation)
 
