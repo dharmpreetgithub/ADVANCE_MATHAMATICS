@@ -90,6 +90,8 @@ These are sufficient statistics for normal distribution.
 Estimated Parameters:
 
 μ = 22.09969685486927
+--
 λ = 0.003161233404904664
+--
 c = 0.03172147293735902
 
